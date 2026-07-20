@@ -1,0 +1,40 @@
+{
+  "name": "spotbook-backend",
+  "version": "1.0.0",
+  "description": "SpotBook — сервер бронирования рабочих мест",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "migrate:up": "node-pg-migrate up -j js --migrations-dir migrations",
+    "migrate:down": "node-pg-migrate down -j js --migrations-dir migrations",
+    "migrate:create": "node-pg-migrate create -j js --migrations-dir migrations",
+    "test": "jest --runInBand",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "node-pg-migrate": "^7.9.1",
+    "pg": "^8.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "@types/pg": "^8.11.6",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.4",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
