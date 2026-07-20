@@ -1,7 +1,8 @@
 # SpotBook — бронирование мест
 
-[![CI](https://github.com/ВАШ_ЛОГИН/spotbook/actions/workflows/ci.yml/badge.svg)](https://github.com/ВАШ_ЛОГИН/spotbook/actions/workflows/ci.yml)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![SpotBook](./SpotBook_screen.png)
 
 **SpotBook* — это Fullstack-приложение для управления бронированием рабочих мест, кресел или конференц-залов в режиме реального времени. Проект спроектирован с упором на строгую типизацию, отказоустойчивую бэкенд-архитектуру, контейнеризацию и защиту от бизнес-ошибок.
 
