@@ -32,9 +32,6 @@ services:
       SMS_GATEWAY_API_KEY: ${SMS_GATEWAY_API_KEY}
     ports:
       - "4000:4000"
-    # Миграции (npm run migrate:up) применяются автоматически при старте
-    # контейнера — см. CMD в backend/Dockerfile.
-
   frontend:
     build: ./frontend
     restart: unless-stopped

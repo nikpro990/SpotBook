@@ -7,7 +7,6 @@ build/
 *.tsbuildinfo
 coverage/
 
-# Редакторы/ОС
 .vscode/
 .idea/
 .DS_Store
